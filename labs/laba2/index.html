@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="script" href="in.js">
+    <title>Lab2</title>
+</head>
+
+<body>
+    <header class="section1">
+        <div class="linewithlogo">
+
+            <div class="head-menu">
+                <a href="#"><img class="logok" src="./img/logo.jpg" alt="logo"></a>
+                <button class="buttom-head">
+                    <p>Подписаться</p>
+                </button>
+            </div>
+        </div>
+        <div class="head-text">
+            <div class="inside-text">
+                <div class="bl-square">
+                    <h1 class="main-text">Минимум вещей в жизне максимум свободы</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section2">
+        <div class="mini-gallery">
+            <div class="gallery-text">
+                <div class="s2-main-text">
+                    <h2 class="s2-header-text">Книголюбам посвящается</h2>
+                    <p class="s2-p">Книги пыляться на полке? Подарите им вторую жизнь. Просто добавьте пост и новым читалетелем может оказаться ваш знакомый</p>
+                </div>
+                <div class="button-l-r">
+                    <a href="#" onclick="slide(-1)"><img class="selector2-left" src="./img/selector2-left.jpg" alt="left"></a>
+                    <a href="#" onclick="slide(1)"><img class="selector2-right" src="./img/selector2-right.jpg" alt="right"></a>
+                </div>
+            </div>
+            <div class="gallery-img">
+                <img class="selector2-img1" id="pic" src="./img/selector2-img1.jpg" />
+            </div>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="s3-block">
+            <div class="s3-main">
+                <div class="logo-with-text">
+                    <a href=""><img class="s3-logo" src="./img/s3-logo.gif" alt="logo"></a>
+                    <p class="s3-head-text">inimalists</p>
+                </div>
+                <p class="s3-second-line">Сервис Аренды вещей</p>
+            </div>
+
+            <div class="s3-sub-block">
+                <p class="s3-sub-text">Узнайте первыми о запуске:</p>
+                <div class="s3-sub-form">
+                    <form action="#">
+                        <input class="s3-sub-input" type="text" name="" id="" value="Оставте email" onfocus="this.value=''">
+                        <button class="s3-sub-button">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="section4">
+        <div class="s4-text">
+            <h2 class="s4-head-text">Экономьте ваши деньги!</h2>
+            <p class="s4-line2">Наша цель создать сообщество минималистов.</p>
+            <p class="s4-line3">Вы упорно трудились ради определенной цели, однако есть вещи которые вам мешают: реклама, маркетинг, соц. сети все пытаюся вам навязать покупку товаров. Дейсвительно ли вам это все необходимо? Можно поступить более разумно достаточно иметь
+                минимум необходимых вещей, остальное брать в аренду. Когда отправляетесь в путешествуете вам ведь много не нужно.
+            </p>
+        </div>
+        <div class="s4-aboutus">
+            <div class="about-us">
+                <div><img class="about-us-img" src="./img/selector4-img1.jpg" alt=""></div>
+                <div class="about-us-text">
+                    <p>Надежный сервис с реальными отзывами</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <div><img class="about-us-img" src="./img/selector4-img2.jpg" alt=""></div>
+                <div class="about-us-text">
+                    <p>Зачем далеко ходить ищите по соседству</p>
+                </div>
+            </div>
+            <div class="about-us">
+                <div><img class="about-us-img" src="./img/selector4-img3.jpg" alt=""></div>
+                <div class="about-us-text">
+                    <p>Полная поддержка
+                        <p class="s4-hour"> 24/7</p>
+                    
+                </div>
+            </div>
+            <div class="about-us">
+                <div><img class="about-us-img" src="./img/selector4-img4.jpg" alt=""></div>
+                <div class="about-us-text">
+                    <p>Оплачивайте только при осмотре товара</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="section5">
+        <div class="s5-block">
+            <p class="s5-text">Остались вопросы или пожелания, напишите нам и мы с радостью вам ответим.</p>
+            <form action="#">
+                <p class="s5-first-text">Тема письма:</p>
+                <input class="s5-first-input" type="text">
+                <p class="s5-second-text">Ваше сообщение:</p>
+                <textarea class="s5-second-input" type=" text "></textarea>
+                <button class="s5-button">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <script>
+        var index = 0;
+        var links = new Array(
+            "./img/selector2-img1.jpg ",
+            "./img/selector2-img2.jpg ",
+        );
+
+        function slide(v) {
+            var element = document.getElementById("pic ");
+            index += 1 * v;
+
+            if (index > links.length - 1) index = 0;
+            else if (index < 0) index = links.length - 1;
+            element.src = links[index];
+        }
+        console.log(12345)
+    </script>
+</body>
+
+</html>
+

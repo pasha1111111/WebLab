@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>l1/1</title>
+    <script>
+   document.createElement('aside');
+   document.createElement('article');
+  </script>
+  <link rel="stylesheet" href="style.css">
+  
+   <script> 
+   window.onload = function() {
+    var drawingCanvas = document.getElementById('smile');
+    if(drawingCanvas && drawingCanvas.getContext) {
+     var context = drawingCanvas.getContext('2d');
+     // Рисуем окружность 
+     context.strokeStyle = "#000";
+     context.fillStyle = "#fc0";
+     context.beginPath();
+     context.arc(100,100,50,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+     // Рисуем левый глаз 
+     context.fillStyle = "#fff";
+     context.beginPath();
+     context.arc(84,90,8,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+     // Рисуем правый глаз 
+     context.beginPath();
+     context.arc(116,90,8,0,Math.PI*2,true);
+     context.closePath();
+     context.stroke();
+     context.fill();
+     // Рисуем рот
+     context.beginPath();
+     context.moveTo(70,115);
+     context.quadraticCurveTo(100,130,130,115);
+     context.quadraticCurveTo(100,150,70,115); 
+     context.closePath();
+     context.stroke();
+     context.fill();
+    }
+   }
+  </script>
+   <script>
+   document.createElement('figure');
+   document.createElement('figcaption');
+    </script>
+      <script>
+   document.createElement('figure');
+   document.createElement('figcaption');
+  </script>
+ 
+    
+</head>
+<body>
+    <h2>article</h2>
+     <h1>Следы невиданных зверей</h1>
+  
+  <article>
+    История о том, как возле столовой появились загадочные розовые 
+    следы с шестью пальцами, и почему это случилось. 
+  </article>
+  <br>
+   <br><br>
+   
+    <h2>aside</h2>
+    <aside>
+   <p>Экономьте электричество</p>
+   <p>Хороший язык</p>
+   <p>Чья палка больше</p>
+  </aside>
+  <article>
+   История о том, как приходилось экономить электричество, 
+   какие меры для этого принимались, и куда оно на самом деле уходило.
+  </article>
+  <br><br><br>
+  
+  
+  <h2>audio</h2>
+  <p>kek</p>
+  <audio controls>
+    <source src="audio/music.ogg" type="audio/ogg; codecs=vorbis">
+    <source src="audio/music.mp3" type="audio/mpeg">
+    Тег audio не поддерживается вашим браузером. 
+    <a href="audio/music.mp3">Скачайте музыку</a>.
+  </audio>
+  
+  <h2>bdi</h2>
+   <p dir="rtl"><bdi>שבת</bdi> — суббота</p>   
+  
+  <h2>canvas</h2>
+   <canvas id="smile" width="200" height="200">
+   <p>Ваш браузер не поддерживает рисование.</p>
+  </canvas><br><br><br>
+  
+  
+  <h2>datalist</h2>
+   <p>Выберите любимого персонажа:</p>
+  <p><input list="character">
+   <datalist id="character">
+    <option value="Чебурашка"></option>
+    <option value="Крокодил Гена"></option>
+    <option value="Шапокляк"></option>
+   </datalist></p>
+   <br><br><br>
+   
+   
+   
+<h2>details</h2>
+    <details>Покажи, что у тебя есть!</details>
+<br><br><br>
+  
+  
+  <h2>dialog</h2>
+  
+  <button id="openDialog">Открыть окно</button>
+  <dialog>
+   <p>Полинезийцы называют Млечный путь Манго-Роа-И-Ата, 
+      что в переводе с маори означает «Длинная акула на рассвете».</p>
+   <p><button id="closeDialog">Закрыть окно</button></p>
+  </dialog>
+  <script>
+   var dialog = document.querySelector('dialog');
+   document.querySelector('#openDialog').onclick = function() {
+    dialog.show(); // Показываем диалоговое окно
+   }
+   document.querySelector('#closeDialog').onclick = function() {
+    dialog.close(); // Прячем диалоговое окно
+   }
+  </script>
+  
+  <br><br><br>
+  <h2>embed</h2>
+  <embed src="images/mouse.swf" width="400" height="300" 
+           type="application/x-shockwave-flash"
+           pluginspage="http://www.macromedia.com/go/getflashplayer">  
+  <br><br><br>
+  
+  <h2>figcaption</h2>
+  
+  
+     <article>
+   <figure>
+    <p><img src="images/thumb3.jpg" alt=""></p>
+    <figcaption>Купеческий клуб</figcaption>
+   </figure>
+   <figure>
+    <p><img src="images/thumb4.jpg" alt=""></p>
+    <figcaption>Памятник Св. Владимиру</figcaption>
+   </figure>
+ </article>
+ <br><br><br>
+ <br><br><br><br>
+ <br><br><br><br>
+ <br><br><br><br>
+ <br><br><br><br>
+ <br>
+ <h2>figure</h2>
+  
+   <article>
+   <figure>
+    <p><img src="images/thumb1.jpg" alt="" /></p>
+    <figcaption>Софийский собор</figcaption>
+   </figure>
+   <figure>
+    <p><img src="images/thumb2.jpg" alt="" /></p>
+    <figcaption>Польский костел</figcaption>
+   </figure>
+  </article>
+   
+   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+   <h2>footer</h2>
+    <article>
+    <h2>Добро пожаловать!</h2>
+    <p>Рада приветствовать вас на своем сайте.</p>
+  </article>
+  <footer>
+    Copyright Кристина Ветрова
+  </footer>
+  <br><br><br>
+  <h2>main</h2>
+   <main>
+    История о том, как возле столовой появились загадочные розовые 
+    следы с шестью пальцами, и почему это случилось. 
+  </main>
+  <br><br><br>
+    <h2>mark</h2>
+       <article>
+    История о том, как возле столовой появились загадочные розовые
+      следы с <mark>шестью пальцами</mark>, и почему это случилось.
+    </article>
+    <br><br><br>
+    <h2>meter</h2>
+     <p>Температура воды</p>
+  <meter value="0" max="100" low="10" high="60">Низкая</meter>
+  <meter value="30" max="100" low="10" high="60">Нормальная</meter>
+  <meter value="80" max="100" low="10" high="60">Горячая</meter>
+  <meter value="100" max="100">Кипяток</meter>
+   
+</body>
+</html>

@@ -1,0 +1,37 @@
+ aside {
+    background: #f0f0f0;
+    padding: 10px;
+    width: 200px;
+    float: right;
+   }
+   article {
+    margin-right: 240px;
+    display: block;
+   }
+
+ dialog {
+    background: rgba(255, 255, 255, 0.7);
+    width: 300px; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+   }
+ figure {
+    background: #d9dabb; /* Цвет фона */
+    display: block; /* Блочный элемент */
+    width: 150px; /* Ширина */
+    height: 190px; /* Высота */
+    float: left; /* Блоки выстраиваются по горизонтали */
+    margin: 0 10px 10px 0; /* Отступы */
+    text-align: center; /* Выравнивание по центру */
+   }
+   figure img {
+    border: 2px solid #8b8e4b; /* Параметры рамки */
+   }
+   figure p {
+    margin-bottom: 0; /* Отступ снизу */
+   }
+mark {
+    background: #ffec82;
+    padding: 0 3px;
+    border: 1px dashed #333;
+   }

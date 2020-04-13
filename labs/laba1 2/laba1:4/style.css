@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+.input-tag,
+.button-tag,
+.radio,
+.checkbox::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 100%;
+    background-color: #43693d;
+    margin: 0;
+}
+
+.select-tag::before {
+    content: "";
+    display: inline-block;
+    height: 6px;
+    width: 100%;
+    background-color: #43693d;
+    margin: 0;
+}
+
+.input-tag,
+.button-tag,
+.radio,
+.checkbox,
+.select-tag {
+    width: 100%;
+    margin-left: 50px;
+    margin-top: 20px;
+}
